@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muba</title>
+    <title>Muba Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -14,7 +14,7 @@
             color: grey;
         }
         header {
-            background: black ;
+            background: black;
             color: white;
             padding: 1rem;
             text-align: center;
@@ -40,12 +40,29 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        form {
-            display: flex;
-            flex-direction: column;
+        .skill-item {
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            padding: 10px;
+            text-align: center;
+            width: 20%;
+            margin: 10px auto;
+            border-radius: 15px;
+            background-color: #e0e0e0;
         }
-
-
+        .skill-item:hover {
+            transform: scale(1.1);
+        }
+        .skill-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .skill-item img {
+            height: 60px;
+        }
     </style>
 </head>
 <body>
@@ -62,22 +79,29 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi! I'm Muba and this is my very first attemp to create my own portfolio.</p>
+        <p>Hi! I'm Muba and this is my very first attempt to create my own portfolio.</p>
     </section>
-
 
     <section id="contact">
         <h2>Contact Me</h2>
         <form>
             <p>Gmail: munkhb4y4r@gmail.com</p>
-            <p>facebook: <a href="https://www.facebook.com/Munkhbayar.04.21" target = "_blank">munkhbayr</a></p>
-            <p>instagram: <a href="https://www.instagram.com/m_u_b_a_4/" target = "_blank">muba...</a></p>
-            <p>phone number: 95683486 </p>
+            <p>Facebook: <a href="https://www.facebook.com/Munkhbayar.04.21" target="_blank">munkhbayr</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/m_u_b_a_4/" target="_blank">muba...</a></p>
+            <p>Phone Number: 95683486</p>
         </form>
     </section>
+    
     <section id="skill">
         <h2>Skill</h2>
-
+        <div class="skill-container">
+            <div class="skill-item">
+                <div class="container">
+                    <img src="your-image-source.jpg" alt="Skill Image"/>
+                </div>
+                <p>Your Skill Name</p>
+            </div>
+        </div>
     </section>
 
     <script src="script.js"></script>
