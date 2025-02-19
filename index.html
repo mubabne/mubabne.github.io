@@ -6,62 +6,83 @@
     <title>Muba Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Background image for the whole page */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: white;
+            background-image: url('https://img.freepik.com/free-photo/3d-digital-landscape-modern-technology-background_1048-10465.jpg?t=st=1739936877~exp=1739940477~hmac=f2c7a9b53f097994d9682c329ac257dba634c9ca88d2548d8f79ae22f49f203c&w=1380');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             color: grey;
         }
+
+        /* Header Styles */
         header {
-            background: black;
+            background: rgba(0, 0, 0, 0.8); /* Slight transparency for better readability */
             color: white;
             padding: 1rem;
             text-align: center;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
         }
+
         nav ul li {
             display: inline;
             margin: 0 15px;
         }
+
         nav ul li a {
             color: white;
             text-decoration: none;
         }
+
+        /* Sections with white background for readability */
         section {
             padding: 2rem;
             max-width: 800px;
-            margin: auto;
-            background: white;
-            margin-bottom: 20px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9); /* Light transparency */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .skill-item {
-            transform: scale(1);
-            transition: transform 0.3s ease-in-out;
-            cursor: pointer;
-            padding: 10px;
-            text-align: center;
-            width: 20%;
-            margin: 10px auto;
-            border-radius: 15px;
-            background-color: #e0e0e0;
-        }
-        .skill-item:hover {
-            transform: scale(1.1);
-        }
+
+        /* Flexbox Grid for Skills */
         .skill-container {
             display: flex;
             justify-content: center;
-            align-items: center;
             flex-wrap: wrap;
+            gap: 20px;
+            max-width: 600px;
+            margin: auto;
         }
+
+        .skill-item {
+            width: calc(33.33% - 20px);
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.1);
+        }
+
         .skill-item img {
             height: 60px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -84,22 +105,38 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
-            <p>Gmail: munkhb4y4r@gmail.com</p>
-            <p>Facebook: <a href="https://www.facebook.com/Munkhbayar.04.21" target="_blank">munkhbayr</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/m_u_b_a_4/" target="_blank">muba...</a></p>
-            <p>Phone Number: 95683486</p>
-        </form>
+        <p>Gmail: munkhb4y4r@gmail.com</p>
+        <p>Facebook: <a href="https://www.facebook.com/Munkhbayar.04.21" target="_blank">munkhbayr</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/m_u_b_a_4/" target="_blank">muba...</a></p>
+        <p>Phone Number: 95683486</p>
     </section>
-    
+
     <section id="skill">
         <h2>Skill</h2>
         <div class="skill-container">
             <div class="skill-item">
-                <div class="container">
-                    <img src="your-image-source.jpg" alt="Skill Image"/>
-                </div>
-                <p>Your Skill Name</p>
+                <img src="https://banner2.cleanpng.com/20181109/oll/kisspng-java-development-kit-logo-programming-language-por-java-logo-svg-1713924793188.webp" alt="C">
+                <p>Java</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C">
+                <p>C</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ Advanced">
+                <p>C++ </p>
+            </div>
+            <div class="skill-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5">
+                <p>HTML5</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3">
+                <p>CSS3</p>
             </div>
         </div>
     </section>
